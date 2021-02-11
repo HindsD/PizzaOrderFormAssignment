@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wisconsin Pizza</title>
+    <link rel="stylesheet" href="pizza.css">
+</head>
+
+<header>
+    <h1>
+        Wisconsin Pizza!
+    </h1>
+</header>
+
+
+<form>
+    <body>
+
+    <div id="wrapper">
+        <h2>Build Your Pizza!</h2>
+
+
+        <h3>Pick Your Size:</h3>
+        <input type="radio" name="size" id="size-small" value="Small" data-fee="7" checked="checked">
+        <label for="size-small">Small</label>
+
+        <br>
+
+        <input type="radio" name="size" id="size-medium" value="Medium" data-fee="9">
+        <label for="size-medium">Medium</label>
+
+        <br>
+
+        <input type="radio" name="size" id="size-large" value="Large" data-fee="12">
+        <label for="size-large">Large</label>
+
+        <br>
+
+        <h3>Pick Your Crust:</h3>
+
+        <input type="radio" name="crust" id="crust-thin" value="Thin" checked="checked">
+        <label for="crust-thin">Thin</label>
+
+        <br>
+
+        <input type="radio" name="crust" id="crust-pan" value="Pan">
+        <label for="crust-pan">Pan</label>
+
+        <br>
+
+        <input type="radio" name="crust" id="crust-gf" value="Gluten Free">
+        <label for="crust-gf">Gluten Free</label>
+
+        <br>
+
+
+        <h3>Pick Your Meats:</h3>
+
+        <input type="checkbox" name="meats" id="meats-sausage" value="Sausage" data-price="1.5">
+        <label for="meats-sausage">Sausage</label>
+
+        <br>
+
+        <input type="checkbox" name="meats" id="meats-pepperoni" value="Pepperoni" data-price="1.5">
+        <label for="meats-pepperoni">Pepperoni</label>
+
+        <br>
+
+        <input type="checkbox" name="meats" id="meats-ham" value="Ham" data-price="1.5">
+        <label for="meats-ham">Ham</label>
+
+
+        <h3>Pick Your Veggies:</h3>
+
+        <input type="checkbox" name="veg" id="veg-mushrooms" value="Mushrooms" data-price="1">
+        <label for="veg-mushrooms">Mushrooms</label>
+
+        <br>
+
+        <input type="checkbox" name="veg" id="veg-onions" value="Onions" data-price="1">
+        <label for="veg-onions">Onions</label>
+
+        <br>
+
+        <input type="checkbox" name="veg" id="veg-peppers" value="Peppers" data-price="1">
+        <label for="veg-peppers">Peppers</label>
+
+    </div>
+
+    <br>
+
+    <div id="wrapper2">
+        <h2>Delivery Information</h2>
+
+        <h3>Name</h3>
+        <input type="text" id="name">
+        <h3>Address</h3>
+        <input type="text" id="address">
+        <h3>Phone Number</h3>
+        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####">
+        <br>
+        <br>
+
+        <button class="bsize">Get Order Summary</button>
+    </div>
+
+    <br>
+
+    <div id="wrapper3">
+        <h1>Order Summary</h1>
+
+        Name: <span id="name1"></span>
+
+        <br>
+
+        Address: <span id="address1"></span>
+
+        <br>
+
+        Phone Number: <span id="phone1"></span>
+
+        <br>
+        <br>
+
+        Size: <span id="size"></span>
+
+        <br>
+
+        Crust: <span id="crust"></span>
+
+        <br>
+
+        Toppings: <span id="meats"></span><span id="veg"></span>
+
+        <br>
+
+        Subtotal: <span id="subtotal"></span>
+
+        <br>
+
+        Tax: <span id="subtotalTax"></span>
+
+        <br>
+
+        Delivery Fee: $2.00
+
+        <br>
+
+        <h3>Total Amount Due:</h3> <span id="grandTotal" class="size"></span>
+
+    </div>
+    </body>
+</form>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="code.js"></script>
+</html>
